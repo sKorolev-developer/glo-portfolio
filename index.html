@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Сергей Королёв - веб-разработчик</title>
+    <link rel="stylesheet" href="assets/style/normalize.css">
     <link rel="stylesheet" href="assets/style/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="container">
 <header>
     <div class="navbar">
         <div class="logo">
@@ -26,6 +28,35 @@
             </ul>
         </nav>
     </div>
+    <!-- /.navbar -->
+    <div class="greetings">
+        <img class="greetings-photo" src="assets/img/emoji.png" alt="Сергей Королёв" width="212">
+        <div class="greetings-text">
+            <strong class="greetings-strong">Привет 👋</strong>
+            <h1 class="greetings-description"><span class="greetings-primary">Я веб-разработчик</span>
+                <br>Меня зовут Сергей Королёв и я делаю сайты для людей и компаний</h1>
+            <div class="greetings-links">
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link">
+                        <img src="assets/img/icons/linkedin.svg" alt="" class="social-logo"></a></li>
+                    <li class="social-item"><a href="" class="social-link">
+                        <img src="assets/img/icons/twitter.svg" alt="" class="social-logo"></a></li>
+                    <li class="social-item"><a href="" class="social-link">
+                        <img src="assets/img/icons/github.svg" alt="" class="social-logo"></a></li>
+                    <li class="social-item"><a href="" class="social-link">
+                        <img src="assets/img/icons/stackoverflow.svg" alt="" class="social-logo"></a></li>
+                    <li class="social-item"><a href="" class="social-link">
+                        <img src="assets/img/icons/youtube.svg" alt="" class="social-logo"></a></li>
+                </ul>
+                <a href="#" class="cv-download" download>
+                    <img src="assets/img/icons/clip.svg" alt="Скачать" class="cv-icon">
+                    <span class="cv-text">Скачать резюме</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /.header-greetings -->
 </header>
+</div>
 </body>
 </html>
