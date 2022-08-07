@@ -1,13 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Inter", sans-serif;
+    color: #211B12;
 }
+
 .container {
     max-width: 870px;
     width: 100%;
     margin: auto;
-}
-header {
-
 }
 
 .navbar {
@@ -137,7 +140,6 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #211B12;
 }
 
 .tags {
@@ -186,4 +188,127 @@ header {
 
 .card-button-icon {
     margin-right: 4px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    padding: 80px 0 20px;
+}
+
+.bio-content {
+    margin-left: 56px;
+}
+
+.bio-greetings {
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+}
+
+.bio-name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    color: #BF7506;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.bio-work {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.bio-hobby {
+    font-size: 24px;
+    line-height: 150%;
+    color: #DD9C3C;
+    margin: 16px 0;
+}
+.bio-description {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.bio-photo {
+    width: 360px;
+    height: 440px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.bio-sign {
+    width: 200px;
+}
+
+.skills {
+    padding: 20px 0;
+}
+
+.skills-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    letter-spacing: -0.02em;
+}
+
+.feedback {
+    padding: 80px 0 160px;
+}
+.form-container {
+    max-width: 435px;
+    margin: auto;
+}
+
+.input-group {
+    position: relative;
+    padding-top: 9px;
+    margin-bottom: 24px;
+}
+
+.input-label {
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #83807C;
+    padding: 0 8px;
+    background: #FFFFFF;
+    top: 0;
+    left: 16px;
+}
+
+.input {
+    border: 3px solid #E0DEDC;
+    border-radius: 4px;
+    width: 435px;
+    height: 56px;
+}
+
+textarea.input {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.submit-btn {
+    display: flex;
+    padding: 7px 8px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #211B12;
+    background-color: #FFFFFF;
+    border: none;
+    border-bottom: 2px solid #BF7506;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: end;
 }
