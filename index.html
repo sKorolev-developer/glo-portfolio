@@ -14,17 +14,17 @@
 </head>
 <body>
 <div class="container">
-    <header>
+    <header id="top">
         <div class="navbar">
             <div class="logo">
                 <img src="assets/img/logo.svg" alt="Logo">
             </div>
             <nav class="navigation-header">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+                    <li class="nav-item"><a href="#top" class="nav-link active">Главная</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#bio" class="nav-link">Обо мне</a></li>
+                    <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,7 +48,7 @@
                         <li class="social-item"><a href="" class="social-link">
                             <img src="assets/img/icons/youtube.svg" alt="" class="social-logo"></a></li>
                     </ul>
-                    <a href="#" class="cv-download" download>
+                    <a href="assets/book.pdf" class="cv-download" download>
                         <img src="assets/img/icons/clip.svg" alt="Скачать" class="cv-icon">
                         <span class="cv-text">Скачать резюме</span>
                     </a>
@@ -57,12 +57,12 @@
         </div>
         <!-- /.greetings -->
     </header>
-    <section class="projects">
+    <section class="projects" id="projects">
         <h2 class="projects-heading">Последние проекты</h2>
         <div class="projects-list">
             <div class="card">
-                <img src="assets/img/portfolio/project-1.jpg" alt="Мобильное приложение">
-                <div class="cart-text-wrapper">
+                <img src="assets/img/portfolio/project-1.jpg" alt="Мобильное приложение" class="card-image">
+                <div class="card-text-wrapper">
                     <h3 class="card-title">Мобильное приложение</h3>
                     <ul class="tags">
                         <li class="tag-item"><a href="#" class="tag">HTML</a></li>
@@ -89,8 +89,8 @@
                 </div>
             </div>
             <div class="card">
-                <img src="assets/img/portfolio/project-2.jpg" alt="Одностраничный промо-сайт">
-                <div class="cart-text-wrapper">
+                <img src="assets/img/portfolio/project-2.jpg" alt="Одностраничный промо-сайт" class="card-image">
+                <div class="card-text-wrapper">
                     <h3 class="card-title">Одностраничный промо-сайт</h3>
                     <ul class="tags">
                         <li class="tag-item"><a href="#" class="tag">HTML</a></li>
@@ -117,20 +117,22 @@
         <!-- /.projects-list -->
     </section>
     <!-- /.projects -->
-    <section class="bio">
-        <img src="assets/img/photo.jpg" alt="Сергей Королёв" class="bio-photo">
+    <section class="bio" id="bio">
+        <img src="assets/img/photo-1.jpg" alt="Сергей Королёв" class="bio-photo">
         <div class="bio-content">
             <p class="bio-greetings">Рад Вас видеть</p>
             <h2 class="bio-name">Я Сергей Королёв</h2>
-            <p class="bio-work">Я разрабатываю сайты и порталы для людей и компаний. Делаю всё сам: составляю прототип, дизайн-макет, пишу код</p>
+            <p class="bio-work">Я разрабатываю сайты и порталы для людей и компаний. Делаю всё сам: составляю прототип,
+                дизайн-макет, пишу код</p>
             <p class="bio-hobby">Код, Дизайн, Обучение</p>
-            <p class="bio-description">Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра. Из инструментов есть:
+            <p class="bio-description">Могу собрать страницу для вашей компании, даже если запускать её нужно уже
+                завтра. Из инструментов есть:
                 <br>Tilda, Webflow, Figma, HTML, CSS, JavaScript и Wordpress</p>
             <img src="assets/img/sign.png" alt="Подпись" class="bio-sign">
         </div>
     </section>
     <!-- /.bio -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2 class="skills-title">Работаю с разными языками и инструментами</h2>
         <ul class="tags">
             <li class="tag-item"><a href="#" class="tag">HTML</a></li>
@@ -145,20 +147,24 @@
         </ul>
     </section>
     <!-- /.skills -->
-    <section class="feedback form-container">
+</div>
+
+<section class="feedback" id="feedback">
+    <img src="assets/img/hand.png" alt="hand" class="feedback-hand">
+    <div class="form-container">
         <h2 class="feedback-title">Готов обсудить проект...</h2>
         <form action="#" class="form">
             <div class="input-group">
                 <label for="name" class="input-label">Имя</label>
-                <input id="name" type="text" class="input">
+                <input name="name" id="name" type="text" class="input">
             </div>
             <div class="input-group">
                 <label for="email" class="input-label">Email</label>
-                <input id="email" type="text" class="input">
+                <input name="email" id="email" type="text" class="input">
             </div>
             <div class="input-group">
                 <label for="message" class="input-label">Сообщение</label>
-                <textarea id="message" class="input" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" class="input" cols="30" rows="10"></textarea>
             </div>
             <div class="button-wrapper">
                 <button type="submit" class="submit-btn">
@@ -167,8 +173,12 @@
                 </button>
             </div>
         </form>
-    </section>
-    <!-- /.feedback -->
-</div>
+    </div>
+</section>
+<!-- /.feedback -->
+<footer class="container">
+    <span>Сделано с ❤️ в Казани</span>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
